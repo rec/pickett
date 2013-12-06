@@ -40,7 +40,7 @@ def week_one(day):
   messages.print_messages(*messages.WEEK_ONE[day])
   people_outside_theater = characters.random_camper_sample(5) + ['t']
 
-  person = characters.choose_person(people_outside_theater,
-                                    messages.LEAVING_THEATER)
+  person = characters.choose_person(
+    people_outside_theater, messages.LEAVING_THEATER)
 
   print 'You selected %s.' % person
