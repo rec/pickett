@@ -105,6 +105,6 @@ def choose_person(people, message):
   while True:
     choice = raw_input(message)
     try:
-      return people[int(choice)]
+      return people[int(choice) - 1]
     except:
       print messages.BAD_NUMBER_MESSAGE % len(people)
